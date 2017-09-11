@@ -2296,7 +2296,7 @@ darwinssl_connect_step2(struct connectdata *conn, int sockindex)
               "handshake");
         return CURLE_SSL_CONNECT_ERROR;
       default:
-        failf(data, "Unknown SSL protocol error in connection to %s:%d",
+        failf(data, "Unknown SSL protocol error in connection to %s: %d",
               hostname, err);
         return CURLE_SSL_CONNECT_ERROR;
     }
